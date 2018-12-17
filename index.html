@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1 id="title">Survey Form</h1>
+  <div class="form-container">
+    <p id="description"><em>Here is a simple test surver form</em></p>
+
+    <form action="POST" id="survey-form">
+      <div class="line">
+        <div class="comment-col">
+          <label for="name" id="name-label">Enter your name</label>
+        </div>
+        <div class="input-col">
+          <input type="text" id="name" placeholder="name" required>
+        </div>
+      </div>
+
+      <div class="line">
+        <div class="comment-col">
+          <label for="email" id="email-label">Enter your email</label>
+        </div>
+        <div class="input-col">
+          <input type="email" id="email" placeholder="email" required>
+        </div>
+      </div>
+
+      <div class="line">
+        <div class="comment-col">
+          <label for="number" id="number-label">Enter the number from 0 to 10</label>
+        </div>
+        <div class="input-col">
+          <input type="number" min=0 max=10 id="number" placeholder="number">
+        </div>
+      </div>
+
+      <div class="line">
+        <div class="comment-col">
+          <label for="dropdown">Choose the option from dropdown</label>
+        </div>
+        <div class="input-col">
+          <select id="dropdown">
+            <option value="1">option 1</option>
+            <option value="2">option 2</option>
+            <option value="3">option 3</option>
+            <option value="4">option 4</option>
+            <option value="5">option 5</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="line">
+        <div class="comment-col">
+            Choose the option from radio group 1
+        </div>
+        <div class="input-col">
+          <ul>
+            <li>
+              <input type="radio" name="radio-group-1" id="rb11" value="rb11" checked="true">
+              <label for="rb11">Radio 1</label>
+            </li>
+            <li>
+              <input type="radio" name="radio-group-1" id="rb12" value="rb12">
+              <label for="rb12">Radio 2</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="line">
+        <div class="comment-col">
+          Choose the option from radio group 2
+        </div>
+        <div class="input-col">
+          <ul>
+            <li>
+              <input type="radio" name="radio-group-2" id="rb21" value="rb21" checked="true">
+              <label for="rb21">Radio 3</label>
+            </li>
+            <li>
+              <input type="radio" name="radio-group-2" id="rb22" value="rb22">
+              <label for="rb22">Radio 4</label>
+            </li>
+            <li>
+                <input type="radio" name="radio-group-2" id="rb23" value="rb23">
+                <label for="rb23">Radio 5</label>
+              </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="line">
+        <div class="comment-col">
+          Select several checkboxes
+        </div>
+        <div class="input-col">
+          <ul>
+            <li>
+              <input type="checkbox" name="checkbox-group-1" value="cb11" id="cb11">
+              <label for="cb11">Box 1</label>
+            </li>
+            <li>
+              <input type="checkbox" name="checkbox-group-1" value="cb12" id="cb12">
+              <label for="cb12">Box 2</label>
+            </li>
+            <li>
+              <input type="checkbox" name="checkbox-group-1" value="cb13" id="cb13">
+              <label for="cb13">Box 3</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="line">
+        <div class="comment-col">
+          <label for="ta1">Add additional info to textarea</label>
+        </div>
+        <div class="input-col">
+          <textarea name="add-info" id="ta1" cols="30" rows="5" placeholder="Enter text here"></textarea>
+        </div>
+      </div>
+
+      <div id="submit-container">
+        <button id="submit" type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

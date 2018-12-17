@@ -1,0 +1,86 @@
+body {
+  background-color: #ddd;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 3px;
+}
+
+input[type=text], 
+input[type=email], 
+input[type=number],
+#dropdown {
+  box-sizing: border-box;
+  width: 200px;
+  height: 20px;
+}
+
+#title {
+  text-align: center;
+}
+
+.form-container {
+  background-color: white;
+  margin: auto;
+  width: 90%;
+  padding: 1px 0; /*?*/
+  max-width: 800px;
+}
+
+#description {
+  /* display: block; */
+  text-align: center;
+  font-size: 1.5em;
+  /* margin-top: 20px; */
+}
+
+#survey-form {
+}
+
+.line {
+  display: flex;
+}
+
+.comment-col, .input-col {
+  margin: 10px 20px;
+  flex-basis: 50%;
+}
+
+.comment-col {
+  text-align: right;
+}
+
+.input-col {
+  text-align: left;
+}
+
+#submit-container {
+  width: 100%;
+  display: flex;
+}
+
+#submit {
+  margin: 10px auto;
+  text-align: center;
+  background-color: #bbb;
+  border-style: none;
+  border-radius: 0;
+  padding: 5px 20px;
+  font-size: 1.2em;
+}
+
+@media (max-width: 600px) {
+  .line {
+    flex-wrap: wrap;
+  }
+  .comment-col, .input-col {
+    flex-basis: 100%;
+    text-align: center;
+  }
+}
